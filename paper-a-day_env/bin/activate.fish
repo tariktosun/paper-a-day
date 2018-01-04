@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/tariktosun/paper-a-day/paper-a-day_env"
+set -gx VIRTUAL_ENV "/home/tariktosun/tariktosun.com/paper-a-day/paper-a-day_env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

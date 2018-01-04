@@ -1,1 +1,1 @@
-/usr/lib/python2.7/sre_parse.py
+/home/tariktosun/opt/python-2.7.7/lib/python2.7/sre_parse.py
