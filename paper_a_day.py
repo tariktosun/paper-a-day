@@ -1,6 +1,7 @@
 import dropbox
 import smtplib
 import pdb
+import random
 
 class paper_a_day:
 
@@ -33,7 +34,8 @@ class paper_a_day:
 		''' Generates and sends email with link to paper'''
 		files_to_read = self.dbx.files_list_folder(self.to_read_folder_path).entries
 		if len(files_to_read) > 0:
-			f = files_to_read[0]
+			#f = files_to_read[0]
+			f = random.choice(files_to_read)
 			file_link = self.generate_link(f)
 			move_file_url = self.generate_move_link(f)
 			text = 'Hello Tarik.  Today you should read this paper:\n' + file_link.url + '\nTo register that you have read the paper, click this link:\n' + move_file_url
